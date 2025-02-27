@@ -1,0 +1,38 @@
+html{
+    background-color: goldenrod;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.adviceContainer{
+    background-color: beige;
+    height: 80%;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+h1, h2{
+    color: #504B38;
+}
+
+.formClass{
+    padding: 10px;
+}
+
+.inputClass{
+    border-radius: 5px;
+    border: none;
+    background-color: beige;
+}
+
+.submitbutton{
+    background-color: beige;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+}

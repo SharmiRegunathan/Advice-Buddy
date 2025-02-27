@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: beige;">Welcome to Advice-on-the-go!</h1>
+    <div class="adviceContainer">
+        <h1>Here's your advice</h1>
+            <% if(locals.data) { %>
+                <h2>"<%= data.advice %>"</h2>
+            <% }else{ %>
+                <h2>Oops, Does 'Try another advice' count as one?</h2>
+            <% } %>
+        </div>
+    <form class="formClass" action="/" method="POST">
+        <label for="answer">Want a more specific advice? Type in a word </label>
+        <input class = "inputClass" name="answer" type="text" required/>
+        <button class="submitbutton" type="submit">Submit</button>
+    </form>
+</body>
+</html>
